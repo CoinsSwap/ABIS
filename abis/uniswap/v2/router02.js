@@ -1,4 +1,20 @@
 export default [{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "_factory",
+      "type": "address"
+    },
+    {
+      "internalType": "address",
+      "name": "_WETH",
+      "type": "address"
+    }
+  ],
+  "stateMutability": "nonpayable",
+  "type": "constructor"
+},
+{
   "inputs": [],
   "name": "WETH",
   "outputs": [
@@ -8,7 +24,7 @@ export default [{
       "type": "address"
     }
   ],
-  "stateMutability": "pure",
+  "stateMutability": "view",
   "type": "function"
 },
 {
@@ -139,7 +155,7 @@ export default [{
       "type": "address"
     }
   ],
-  "stateMutability": "pure",
+  "stateMutability": "view",
   "type": "function"
 },
 {
@@ -948,5 +964,8 @@ export default [{
   ],
   "stateMutability": "nonpayable",
   "type": "function"
-}
-]
+},
+{
+  "stateMutability": "payable",
+  "type": "receive"
+}]
