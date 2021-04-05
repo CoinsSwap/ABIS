@@ -1,4 +1,4 @@
-export default [
+[
   {
     "constant": true,
     "inputs": [],
@@ -10,18 +10,17 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": false,
     "inputs": [
       {
-        "name": "guy",
+        "name": "_spender",
         "type": "address"
       },
       {
-        "name": "wad",
+        "name": "_value",
         "type": "uint256"
       }
     ],
@@ -33,7 +32,6 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -47,22 +45,21 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": false,
     "inputs": [
       {
-        "name": "src",
+        "name": "_from",
         "type": "address"
       },
       {
-        "name": "dst",
+        "name": "_to",
         "type": "address"
       },
       {
-        "name": "wad",
+        "name": "_value",
         "type": "uint256"
       }
     ],
@@ -74,21 +71,6 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "wad",
-        "type": "uint256"
-      }
-    ],
-    "name": "withdraw",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -102,14 +84,13 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": true,
     "inputs": [
       {
-        "name": "",
+        "name": "_owner",
         "type": "address"
       }
     ],
@@ -121,7 +102,6 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -135,18 +115,17 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
     "constant": false,
     "inputs": [
       {
-        "name": "dst",
+        "name": "_to",
         "type": "address"
       },
       {
-        "name": "wad",
+        "name": "_value",
         "type": "uint256"
       }
     ],
@@ -158,27 +137,17 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [],
-    "name": "deposit",
-    "outputs": [],
-    "payable": true,
-    "stateMutability": "payable",
     "type": "function"
   },
   {
     "constant": true,
     "inputs": [
       {
-        "name": "",
+        "name": "_owner",
         "type": "address"
       },
       {
-        "name": "",
+        "name": "_spender",
         "type": "address"
       }
     ],
@@ -190,52 +159,29 @@ export default [
       }
     ],
     "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
-    "payable": true,
-    "stateMutability": "payable",
-    "type": "fallback"
+    "inputs": [],
+    "payable": false,
+    "type": "constructor"
   },
   {
     "anonymous": false,
     "inputs": [
       {
         "indexed": true,
-        "name": "src",
+        "name": "_from",
         "type": "address"
       },
       {
         "indexed": true,
-        "name": "guy",
+        "name": "_to",
         "type": "address"
       },
       {
         "indexed": false,
-        "name": "wad",
-        "type": "uint256"
-      }
-    ],
-    "name": "Approval",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "src",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "dst",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "name": "wad",
+        "name": "_value",
         "type": "uint256"
       }
     ],
@@ -247,33 +193,21 @@ export default [
     "inputs": [
       {
         "indexed": true,
-        "name": "dst",
+        "name": "_owner",
         "type": "address"
       },
-      {
-        "indexed": false,
-        "name": "wad",
-        "type": "uint256"
-      }
-    ],
-    "name": "Deposit",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
       {
         "indexed": true,
-        "name": "src",
+        "name": "_spender",
         "type": "address"
       },
       {
         "indexed": false,
-        "name": "wad",
+        "name": "_value",
         "type": "uint256"
       }
     ],
-    "name": "Withdrawal",
+    "name": "Approval",
     "type": "event"
   }
 ]
