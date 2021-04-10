@@ -5,17 +5,13 @@ export default [{
   input: 'src/abis.js',
   output: [{
     format: 'cjs',
-    dir: 'dist/commonjs',
-    plugins: [
-      json(),
-      terser()
-    ]
+    dir: 'dist/commonjs'
   }, {
     format: 'es',
-    dir: 'dist/module',
-    plugins: [
-      json(),
-      terser()
-    ]
-  }]
+    dir: 'dist/module'
+  }],
+  plugins: [
+    json(),
+    terser()
+  ]
 }]
