@@ -1,6 +1,6 @@
 {
   "name": "@coinsswap/abis",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "main": "dist/commonjs/abis.js",
   "module": "dist/module/abis.js",
